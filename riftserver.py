@@ -9,8 +9,9 @@ itemlist = xmldoc.getElementsByTagName('shard')
 
 for s in itemlist :
     if s.attributes['name'].value == 'Faeblight' :
-        print s.attributes['name'].value
-
+      #  print s.attributes['online'].value
+        if s.attributes['online'].value == 'True'  :
+            print 'Go Play!'
 
 
 
