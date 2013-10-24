@@ -7,10 +7,9 @@ status = site.read()
 xmldoc = minidom.parseString(status)
 itemlist = xmldoc.getElementsByTagName('shard')
 
-print len(itemlist)
-print itemlist[0].attributes['name'].value
 for s in itemlist :
-    print s.attributes['name'].value
+    if s.attributes['name'].value == 'Faeblight' :
+        print s.attributes['name'].value
 
 
 
