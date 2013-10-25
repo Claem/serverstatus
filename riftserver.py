@@ -11,9 +11,10 @@ def onlinestat(server):
     for s in itemlist:
         if s.attributes['name'].value == server:
             return s.attributes['online'].value
+               
             
+if onlinestat(sys.argv[1]) == 'True':
 
-if onlinestat('Faeblight') == 'True':
     print 'Go Play!'
-    
+    print sys.argv[1]
     
