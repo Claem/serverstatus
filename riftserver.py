@@ -14,7 +14,7 @@ def onlinestat(server):
                
             
 if onlinestat(sys.argv[1]) == 'True':
-
     print 'Go Play!'
     print sys.argv[1]
-    
+else:
+    print 'Sorry Bob. Try again later.' 
